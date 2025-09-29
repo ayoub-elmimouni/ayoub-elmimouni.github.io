@@ -29,7 +29,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="home flex bg-cover bg-center bg-fixed text-white min-h-screen font-ubuntu" id="home" style={{backgroundImage: "url('/images/banners.png')"}}>
+    <section className="home flex bg-cover bg-center bg-fixed text-white min-h-screen font-ubuntu" id="home" style={{backgroundImage: "url('/images/555.jpeg')"}}>
       <div className="max-width w-full flex">
         <div className="home-content">
           <div className="text-1 text-3xl">Hello, my name is</div>
