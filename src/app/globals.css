@@ -661,6 +661,7 @@ section .title::after{
   color: crimson;
   background: none;
 }
+
 /* footer section styling */
 footer{
     background: #111;
@@ -800,31 +801,5 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    .skills-card {
-        padding: 25px 20px;
-    }
-    
-    .skills-list {
-        justify-content: center;
-    }
-    
-    .skill-tag {
-        padding: 6px 12px;
-        font-size: 13px;
     }
 }
