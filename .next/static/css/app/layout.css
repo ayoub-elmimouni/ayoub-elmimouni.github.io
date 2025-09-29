@@ -78,6 +78,9 @@
 .pointer-events-none {
   pointer-events: none;
 }
+.absolute {
+  position: absolute;
+}
 .fixed {
   position: fixed;
 }
@@ -134,6 +137,18 @@
 }
 .w-3\/5 {
   width: calc(3/5 * 100%);
+}
+.w-\[10\%\] {
+  width: 10%;
+}
+.w-\[30\%\] {
+  width: 30%;
+}
+.w-\[80\%\] {
+  width: 80%;
+}
+.w-\[90\%\] {
+  width: 90%;
 }
 .w-full {
   width: 100%;
