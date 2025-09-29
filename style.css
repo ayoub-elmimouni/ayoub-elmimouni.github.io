@@ -389,6 +389,9 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 .teams .carousel .card:hover{
     background: crimson;
@@ -399,6 +402,7 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    height: 100%;
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
@@ -407,6 +411,15 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.teams .carousel .card p{
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 .teams .carousel .card img{
     height: 500px;
