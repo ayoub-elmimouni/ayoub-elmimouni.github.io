@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banners.png") no-repeat center;
+    background: url("images/555.jpeg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -306,151 +306,76 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "explore my skills";
+    content: "what i know";
 }
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+.skills .skills-content .column{
+    width: calc(50% - 30px);
 }
-
-.skills-column {
-    background: #fff;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills-column:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.column-title {
-    display: flex;
-    align-items: center;
-    font-size: 22px;
+.skills .skills-content .left .text{
+    font-size: 20px;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 10px;
 }
-
-.column-title i {
-    font-size: 24px;
-    color: crimson;
-    margin-right: 10px;
+.skills .skills-content .left p{
+    text-align: justify;
 }
-
-.skill-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid #f5f5f5;
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-
-.skill-item:last-child {
-    border-bottom: none;
-}
-
-.skill-item:hover {
-    background: #f8f9fa;
-    padding-left: 10px;
-    border-radius: 8px;
-}
-
-.skill-item i {
-    font-size: 20px;
+.skills .skills-content .left a:hover{
     color: crimson;
-    margin-right: 15px;
-    width: 25px;
-    text-align: center;
+    background: none;
 }
-
-.skill-info {
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 5px;
     align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
     width: 100%;
 }
-
-.skill-name {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
+.skills-content .right .css::before{
+    width: 90%;
 }
-
-.skill-level {
-    font-size: 12px;
-    font-weight: 500;
-    padding: 4px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.skills-content .right .js::before{
+    width: 80%;
 }
-
-.skill-level.expert {
-    background: #28a745;
-    color: white;
+.skills-content .right .php::before{
+    width: 30%;
 }
-
-.skill-level.advanced {
-    background: #007bff;
-    color: white;
-}
-
-.skill-level.intermediate {
-    background: #ffc107;
-    color: #333;
-}
-
-.skill-level.beginner {
-    background: #6c757d;
-    color: white;
-}
-
-/* Responsive design for skills section */
-@media (max-width: 1200px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .skills-column {
-        padding: 20px;
-    }
-    
-    .column-title {
-        font-size: 20px;
-    }
-    
-    .skill-name {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 500px) {
-    .skill-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    
-    .skill-info {
-        width: 100%;
-        margin-left: 40px;
-    }
+.skills-content .right .mysql::before{
+    width: 10%;
 }
 
 /* teams section styling */
